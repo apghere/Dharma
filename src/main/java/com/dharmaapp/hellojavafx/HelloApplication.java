@@ -131,9 +131,9 @@ public class HelloApplication extends Application {
      * Replace 'yourUsername' and 'yourPassword' with your actual database credentials.
      */
     private void initializeDataFromDatabase() {
-        String url = "jdbc:mysql://localhost:3306/abhishree";
-        String dbUsername = "root";
-        String dbPassword = "GosAbhi007#";
+        String url = "jdbc:mysql:address";
+        String dbUsername = "root123";
+        String dbPassword = "yourpassword";
         String query = "SELECT name, date, importance, scripture_reference, rituals FROM rituals ORDER BY date";
 
         try (Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
